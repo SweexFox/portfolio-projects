@@ -4,4 +4,4 @@ My stack is: Excel, SQL, Python, Tableau, Power BI, Google Analytics, Yandex.Met
 
 What libraries do I use in Python: Pandas, NumPy, Matplotlib, Seaborn, Plotly, SciPy
 
-What database do I use in SQL: PostgreSQL, MySQL
+What databases do I use in SQL: PostgreSQL, MySQL
