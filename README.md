@@ -1,7 +1,7 @@
-## Here you can see my data analyst projects
+## Проекты по инструментам
 
-My stack is: Excel, SQL, Python, Tableau, Power BI, Google Analytics, Yandex.Metrica
+Перечень инструментов: Excel, SQL, Python, Tableau, Power BI, Google Analytics, Яндекс.Метрика
 
-What libraries do I use in Python: Pandas, NumPy, Matplotlib, Seaborn, Plotly, SciPy
+Библиотеки Python: Pandas, NumPy, Matplotlib, Seaborn, Plotly, SciPy
 
-What databases do I use in SQL: PostgreSQL, MySQL
+СУБД: PostgreSQL, MySQL
