@@ -1,7 +1,5 @@
 ## Навыки и инструменты
 
-Перечень инструментов: Excel, SQL, Python, Tableau, Power BI, Google Analytics, Яндекс.Метрика
-
+Инструменты: Excel, SQL, Python, Tableau, Power BI, Google Analytics, Яндекс.Метрика
 Библиотеки Python: Pandas, NumPy, Matplotlib, Seaborn, Plotly, SciPy
-
 СУБД: PostgreSQL, MySQL
