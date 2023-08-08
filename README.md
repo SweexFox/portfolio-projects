@@ -1,7 +1,18 @@
-## Навыки и инструменты
+## Инструменты
 
-Инструменты: Excel, SQL, Python, Tableau, Power BI, Google Analytics, Яндекс.Метрика
-<br>
+Excel, SQL, Python, Tableau, Power BI, Google Analytics, Яндекс.Метрика
+
 Библиотеки Python: Pandas, NumPy, Matplotlib, Seaborn, Plotly, SciPy
-<br>
+
 СУБД: PostgreSQL, MySQL
+
+## Навыки
+- предобработка данных
+- исследовательский анализ данных
+- визуализация данных
+- описательная статистика
+- проверка статистических гипотез
+- A/B тестирование
+- когортный анализ
+- юнит-экономика
+- продуктовые метрики
