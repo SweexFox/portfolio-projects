@@ -1,4 +1,4 @@
-## Проекты по инструментам
+## Навыки и инструменты
 
 Перечень инструментов: Excel, SQL, Python, Tableau, Power BI, Google Analytics, Яндекс.Метрика
 
