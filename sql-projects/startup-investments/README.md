@@ -6,4 +6,5 @@
 <br>
 Путём написания запросов к базе был произведён анализ данных.
 
+##ER-диаграмма
 ![1_Baza_dannykh_1673427320](https://github.com/SweexFox/portfolio-projects/assets/141644044/6359d676-f495-4296-a968-192d4430f6dd)
