@@ -1,8 +1,8 @@
-# Projects
+# Проекты
 
 
-| # | Project name | Description | Stack |
+| # | Наименование проекта | Описание | Стек |
 | :--------------------: | :--------------------: | :---------------------: |:---------------------------:|
-| 1. | [Startup investments](https://github.com/SweexFox/portfolio-projects/tree/main/sql-projects/startup-investments) | Varying complexity database queries | SQL, PostgreSQL |
+| 1. | [Startup investments](https://github.com/SweexFox/portfolio-projects/tree/main/sql-projects/startup-investments) | Запросы к базе данных различной сложности | SQL, PostgreSQL |
 
 
