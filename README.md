@@ -17,6 +17,6 @@ Excel, SQL, Python, Tableau, Power BI, Google Analytics, Яндекс.Метри
 - юнит-экономика
 - продуктовые метрики
 
-| Project name | Description | Stack |
+| # | Project name | Description | Stack |
 | :--------------------: | :---------------------: |:---------------------------:|
 | с выравниванием слева | с выравниванием справа | и с выравниванием по центру |
