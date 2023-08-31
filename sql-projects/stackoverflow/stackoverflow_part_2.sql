@@ -1,7 +1,7 @@
 -- 1.
 -- Общая сумма просмотров постов за каждый месяц 2008 года
 SELECT DATE_TRUNC('month', creation_date)::date AS month,
-	   SUM(views_count) AS views
+       SUM(views_count) AS views
 FROM stackoverflow.posts
 WHERE EXTRACT(YEAR FROM creation_date) = 2008
 GROUP BY month
@@ -14,12 +14,12 @@ ORDER BY views DESC;
 -- Не учитываются вопросы, которые задавали пользователи. 
 -- Для каждого имени пользователя выведено количество уникальных значений user_id
 SELECT display_name,
-	   COUNT(DISTINCT user_id) AS user_ids
+       COUNT(DISTINCT user_id) AS user_ids
 FROM stackoverflow.posts AS p
 INNER JOIN stackoverflow.users AS u ON p.user_id = u.id
 WHERE post_type_id IN (SELECT id
-					   FROM stackoverflow.post_types
-					   WHERE type = 'Answer')
+		       FROM stackoverflow.post_types
+		       WHERE type = 'Answer')
   AND p.creation_date <= u.creation_date + INTERVAL '1 month'
 GROUP BY 1
 HAVING COUNT(post_type_id) > 100
@@ -31,12 +31,12 @@ ORDER BY display_name;
 -- 3.
 -- Количество постов за 2008 год по месяцам от пользователей, которые зарегистрировались в сентябре 2008 года и сделали хотя бы один пост в декабре того же года
 SELECT DATE_TRUNC('month', creation_date)::date AS month,
-	   COUNT(id)	   
+       COUNT(id)	   
 FROM stackoverflow.posts
 WHERE user_id IN (SELECT user_id
                   FROM (SELECT user_id,
-	                           u.creation_date AS reg_date,
-	                           p.creation_date AS post_date
+	                       u.creation_date AS reg_date,
+	                       p.creation_date AS post_date
                         FROM stackoverflow.users AS u
                         INNER JOIN stackoverflow.posts AS p ON u.id = p.user_id
                         WHERE u.creation_date::date BETWEEN '2008-09-01' AND '2008-09-30'
@@ -54,9 +54,9 @@ ORDER BY month DESC;
 -- количество просмотров у текущего поста;
 -- сумму просмотров постов автора с накоплением
 SELECT user_id,
-	   creation_date,
-	   views_count,
-	   SUM(views_count) OVER (PARTITION BY user_id ORDER BY creation_date) AS cum_sum
+       creation_date,
+       views_count,
+       SUM(views_count) OVER (PARTITION BY user_id ORDER BY creation_date) AS cum_sum
 FROM stackoverflow.posts;
 
 
@@ -64,15 +64,15 @@ FROM stackoverflow.posts;
 -- Сколько в среднем дней в период с 1 по 7 декабря 2008 года включительно пользователи взаимодействовали с платформой
 WITH
 days_per_user AS (SELECT user_id,
-	                     COUNT(post_date) AS active_days
+	                 COUNT(post_date) AS active_days
                   FROM (SELECT user_id,
-	                           creation_date::date AS post_date
+	                       creation_date::date AS post_date
                         FROM stackoverflow.posts
                         WHERE creation_date::date BETWEEN '2008-12-01' AND '2008-12-07'
                         GROUP BY user_id,
-		                         creation_date::date
+		                 creation_date::date
                         ORDER BY user_id,
-		                         creation_date::date) AS subquery
+		                 creation_date::date) AS subquery
                   GROUP BY user_id)
 SELECT ROUND(AVG(active_days)) AS av_days
 FROM days_per_user;
@@ -87,15 +87,15 @@ FROM days_per_user;
 -- процент, который показывает, насколько изменилось количество постов в текущем месяце по сравнению с предыдущим
 WITH
 changes AS (SELECT *,
-	               LAG(posts) OVER () AS last_month_posts
+	           LAG(posts) OVER () AS last_month_posts
             FROM (SELECT EXTRACT(MONTH FROM creation_date) AS month_number,
-	                     COUNT(id) AS posts
+	                 COUNT(id) AS posts
                   FROM stackoverflow.posts
                   WHERE creation_date BETWEEN '2008-09-01' AND '2008-12-31'
                   GROUP BY month_number) AS subquery)
 SELECT month_number,
-	   posts,
-	   ROUND((posts::numeric / last_month_posts - 1) * 100, 2) AS percent_changes
+       posts,
+       ROUND((posts::numeric / last_month_posts - 1) * 100, 2) AS percent_changes
 FROM changes;
 
 
@@ -106,18 +106,18 @@ FROM changes;
 -- дата и время последнего поста, опубликованного на этой неделе
 WITH
 usr_oct_actions AS (SELECT EXTRACT(WEEK FROM creation_date) AS week,
-	                       creation_date,
-	                       MAX(creation_date) OVER (PARTITION BY EXTRACT(WEEK FROM creation_date)) AS last_post_week
+	                   creation_date,
+	                   MAX(creation_date) OVER (PARTITION BY EXTRACT(WEEK FROM creation_date)) AS last_post_week
                     FROM stackoverflow.posts
                     WHERE user_id IN (SELECT user_id
                                       FROM (SELECT user_id,
-	                                               COUNT(id) AS posts
+	                                           COUNT(id) AS posts
                                             FROM stackoverflow.posts
                                             GROUP BY user_id
                                             ORDER BY posts DESC
                                             LIMIT 1) AS subquery)
                     AND creation_date::date BETWEEN '2008-10-01' AND '2008-10-31')
 SELECT DISTINCT week,
-	   last_post_week
+       last_post_week
 FROM usr_oct_actions
 ORDER BY week;
