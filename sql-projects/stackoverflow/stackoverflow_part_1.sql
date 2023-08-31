@@ -10,7 +10,7 @@ WHERE type = 'Question'
 -- 2. Среднее количество заданных с 1 по 18 ноября 2008 года вопросов
 SELECT ROUND(AVG(questions)) AS questions_per_day
 FROM (SELECT creation_date::date,
-	         COUNT(title) AS questions
+	     COUNT(title) AS questions
       FROM stackoverflow.posts AS p
       INNER JOIN stackoverflow.post_types AS pt ON p.post_type_id = pt.id
       WHERE CAST(creation_date AS date) BETWEEN '2008-11-01' AND '2008-11-18'
@@ -21,9 +21,9 @@ FROM (SELECT creation_date::date,
 -- 3. Количество уникальных пользователей, которые в день регистрации получили значки за достижения
 SELECT COUNT(DISTINCT user_id) AS unique_users
 FROM (SELECT u.id AS user_id,
-	         name,
-	         u.creation_date::date AS register_dt,
-	         b.creation_date::date AS badge_dt
+	     name,
+	     u.creation_date::date AS register_dt,
+	     b.creation_date::date AS badge_dt
       FROM stackoverflow.users AS u
       INNER JOIN stackoverflow.badges AS b ON u.id = b.user_id
       WHERE u.creation_date::date = b.creation_date::date) AS subquery
@@ -40,14 +40,14 @@ WHERE p.user_id IN (SELECT id
 
 -- 5. Все поля таблицы vote_types. К ней добавлено поле rank, в которое войдут номера записей в обратном порядке
 SELECT *,
-	   ROW_NUMBER() OVER (ORDER BY id DESC) AS rank
+       ROW_NUMBER() OVER (ORDER BY id DESC) AS rank
 FROM stackoverflow.vote_types
 ORDER BY id;
 
 
 -- 6. 10 пользователей, которые поставили больше всего голосов типа Close
 SELECT user_id,
-	   COUNT(name) AS close_votes
+       COUNT(name) AS close_votes
 FROM stackoverflow.votes AS v
 INNER JOIN stackoverflow.vote_types AS vt ON v.vote_type_id = vt.id
 WHERE name = 'Close'
@@ -59,7 +59,7 @@ LIMIT 10;
 
 -- 7. 10 пользователей по количеству значков, полученных в период с 15 ноября по 15 декабря 2008 года включительно
 SELECT *,
-	   DENSE_RANK() OVER (ORDER BY badges DESC) AS rank
+       DENSE_RANK() OVER (ORDER BY badges DESC) AS rank
 FROM (SELECT user_id,
 	         COUNT(id) AS badges
       FROM stackoverflow.badges
@@ -77,9 +77,9 @@ FROM (SELECT user_id,
 -- среднее число очков пользователя за пост, округлённое до целого числа.
 -- Не учитываются посты без заголовка, а также те, что набрали ноль очков
 SELECT title,
-	   user_id,
-	   score,
-	   ROUND(AVG(score) OVER (PARTITION BY user_id)) AS avg_score
+       user_id,
+       score,
+       ROUND(AVG(score) OVER (PARTITION BY user_id)) AS avg_score
 FROM stackoverflow.posts
 WHERE title IS NOT NULL
   AND score <> 0;
@@ -90,7 +90,7 @@ SELECT title
 FROM stackoverflow.posts
 WHERE user_id IN (SELECT user_id
                   FROM (SELECT user_id,
-	                           COUNT(name) AS badges
+	                       COUNT(name) AS badges
                         FROM stackoverflow.badges
                         GROUP BY user_id
                         HAVING COUNT(name) > 1000
@@ -118,9 +118,9 @@ WHERE views <> 0
 -- 11. Из предыдущего запроса отображены лидеры каждой группы — пользователи, которые набрали максимальное число просмотров в своей группе 
 WITH
 t1 AS (SELECT id,
-	          groups,
-	          views,
-	          MAX(views) OVER (PARTITION BY groups) AS max_views
+	      groups,
+	      views,
+	      MAX(views) OVER (PARTITION BY groups) AS max_views
        FROM (SELECT id,
                     views,
                     CASE
@@ -132,12 +132,12 @@ t1 AS (SELECT id,
              WHERE views <> 0
              AND location LIKE '%United States%') AS subquery)
 SELECT id,
-	   GROUPS,
-	   views
+       GROUPS,
+       views
 FROM t1
 WHERE views = max_views
 ORDER BY views DESC,
-		 id
+		 id;
 
 
 -- 12. Ежедневный прирост новых пользователей в ноябре 2008 года
@@ -153,11 +153,11 @@ FROM (SELECT EXTRACT(DAY FROM creation_date::date) AS november_day,
 
 -- 13. Интервал между регистрацией и временем создания первого поста для каждого пользователя, который написал хотя бы один пост
 SELECT user_id,
-	   first_post_date - reg_date AS time_diff
+       first_post_date - reg_date AS time_diff
 FROM (SELECT user_id,
-	         u.creation_date AS reg_date,
-	         p.creation_date AS post_date,
-	         FIRST_VALUE(p.creation_date) OVER(PARTITION BY user_id ORDER BY p.creation_date) AS first_post_date
+	     u.creation_date AS reg_date,
+	     p.creation_date AS post_date,
+	     FIRST_VALUE(p.creation_date) OVER(PARTITION BY user_id ORDER BY p.creation_date) AS first_post_date
       FROM stackoverflow.posts AS p
       INNER JOIN stackoverflow.users AS u ON p.user_id = u.id
       ORDER BY 1) AS subquery
