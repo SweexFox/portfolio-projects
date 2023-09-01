@@ -1,1 +1,1 @@
-![Zen](https://github.com/SweexFox/portfolio-projects/assets/141644044/1200e1f1-e676-404b-93cd-07eb92e972c5)
+![Анализ взаимодействия пользователей с карточками на платформе Дзен](https://github.com/SweexFox/portfolio-projects/assets/141644044/71ecfcf1-0d9c-449c-b3b2-ba6294b683e5)
