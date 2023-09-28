@@ -1,7 +1,7 @@
 # Сервис по доставке еды
 
 ## Описание проекта
-На основе четырёх csv файлов: `courier_actions`, `user_actions`, `orders` и `products` был проведён анализ работы сервиса по доставке еды.\
+На основе четырёх csv файлов в папке `source`: `courier_actions`, `user_actions`, `orders` и `products` был проведён анализ работы сервиса по доставке еды.\
 Проект состоит из трёх частей:
 1. Характеристика работы сервиса — `food_delivery_service_performance.sql`
 2. Анализ экономики сервиса — `product_economics.sql`
