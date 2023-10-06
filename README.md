@@ -8,5 +8,4 @@
 |  3  | [Вопросы и ответы сервиса Stack Overflow](https://github.com/SweexFox/portfolio-projects/tree/main/sql-projects/stackoverflow) | Все сложные SQL-запросы для подсчёта требуемых значений и метрик | SQL, PostgreSQL |
 |  4  | [Анализ взаимодействия пользователей с карточками на платформе Дзен](https://github.com/SweexFox/portfolio-projects/tree/main/tableau-projects/zen) | Подготовлен интерактивный дашборд на основе данных о поведении пользователей. Для его создания использован BI-инструмент Tableau | Tableau, продуктовые метрики, построение дашбордов |
 |  5  | [Активность пользователей на Яндекс Музыке](https://github.com/SweexFox/portfolio-projects/tree/main/python-projects/1-yandex-music) | Сравнение поведения пользователей Москвы и Санкт-Петербурга на данных Яндекс Музыки | Python, Pandas
-
-
+|  6  | [Исследование надёжности заёмщиков](https://github.com/SweexFox/portfolio-projects/tree/main/python-projects/2-borrowers-reliability) | Исследование на основе данных кредитного отдела банка. Как жизненные факторы человека влияют на погашение кредита в срок | Python, Pandas, предобработка данных
