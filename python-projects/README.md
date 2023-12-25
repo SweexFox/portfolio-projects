@@ -7,4 +7,5 @@
 2. Matplotlib
 3. NumPy
 4. Seaborn
-5. SciPy
+5. Plotly
+6. SciPy
