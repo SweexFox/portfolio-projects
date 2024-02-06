@@ -2,6 +2,7 @@
 
 ## Описание проекта
 Цель проекта: провести предобработку данных, чтобы подготовить датасет к анализу.
+[Ссылка на Google Colab](https://colab.research.google.com/github/SweexFox/portfolio-projects/blob/main/python-projects/7-kz-car-market/kz_car_market.ipynb)
 
 
 ## Навыки и инструменты
@@ -20,5 +21,3 @@
 5. Устранены неявные дубликаты.
 6. Устранены аномальные значения.
 7. Разобраны пропущенные значения.
-
-[Ссылка на Google Colab](https://colab.research.google.com/github/SweexFox/portfolio-projects/blob/main/python-projects/7-kz-car-market/kz_car_market.ipynb)
