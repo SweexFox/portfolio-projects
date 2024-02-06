@@ -20,3 +20,5 @@
 5. Устранены неявные дубликаты.
 6. Устранены аномальные значения.
 7. Разобраны пропущенные значения.
+
+[Ссылка на Google Colab]([url](https://colab.research.google.com/github/SweexFox/portfolio-projects/blob/main/python-projects/7-kz-car-market/kz_car_market.ipynb)https://colab.research.google.com/github/SweexFox/portfolio-projects/blob/main/python-projects/7-kz-car-market/kz_car_market.ipynb)
