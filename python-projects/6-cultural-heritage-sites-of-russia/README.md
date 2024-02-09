@@ -2,9 +2,12 @@
 
 ## Описание проекта
 
-[Ссылка](https://disk.yandex.ru/d/y3Wip7G9sfVmzg) на сырые данные, 522 мб
+Цель: провести предобработку данных, чтобы подготовить датасет к анализу.
 
-В файле `cultural_preprocessing.ipynb` выполнена предобработка данных. 
+В файле `cultural_preprocessing.ipynb` выполнена предобработка данных.
+
+[Ссылка](https://disk.yandex.ru/d/y3Wip7G9sfVmzg) на сырые данные, 522 мб\
+[Ссылка на Google Colab](https://colab.research.google.com/drive/1euNYuj5jd6i9YPXWWqfDnZt1lr7wenWS?usp=sharing)
 
 
 ## Навыки и инструменты
