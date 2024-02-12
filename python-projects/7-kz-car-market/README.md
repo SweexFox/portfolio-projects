@@ -5,9 +5,9 @@
 Ссылка с тетрадкой по предобработке на [Google Colab](https://colab.research.google.com/github/SweexFox/portfolio-projects/blob/main/python-projects/7-kz-car-market/kz_car_market.ipynb)
 
 Описание файлов:\
-`raw_auto_kz_2019_датасет.csv` — сырой датасет, по которому будет сделана предобработка;\
+`raw_auto_kz.csv` — сырой датасет, по которому будет сделана предобработка;\
 `prep_kz_car_market.ipynb` — тетрадка Jupyter с процессом предобработки;\
-`dry_auto_kz_2019_датасет.csv` — сухой датасет, по которому уже сделана предобработка.
+`dry_auto_kz.csv` — сухой датасет, по которому уже сделана предобработка.
 
 
 ## Навыки и инструменты
