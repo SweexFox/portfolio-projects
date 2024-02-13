@@ -7,6 +7,7 @@
 В файле `cultural_preprocessing.ipynb` выполнена предобработка данных.
 
 [Ссылка](https://disk.yandex.ru/d/y3Wip7G9sfVmzg) на сырые данные, 522 мб\
+[Ссылка](https://disk.yandex.ru/d/7LXuD2Jo_yzjfg) на очищенные данные, 53 мб\
 [Ссылка на Google Colab](https://colab.research.google.com/drive/1euNYuj5jd6i9YPXWWqfDnZt1lr7wenWS?usp=sharing)
 
 
@@ -15,6 +16,7 @@
 * Pandas
 * NumPy
 * re
+* JSON
 * Предобработка данных
 
 
