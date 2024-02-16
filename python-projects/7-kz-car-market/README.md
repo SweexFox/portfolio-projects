@@ -2,7 +2,7 @@
 
 ## Описание проекта
 Цель проекта: провести предобработку данных, чтобы подготовить датасет к анализу.\
-Ссылка с тетрадкой по предобработке на [Google Colab](https://colab.research.google.com/drive/1cRgxoe7U0FZqog4jffyAAiFc_8wJe3Qj?usp=sharing)
+Ссылка с тетрадкой по предобработке на [Google Colab](https://colab.research.google.com/drive/1SAWUcJJHVEFrwjGAaAg0AYKBGnFORE34?usp=sharing)
 
 Описание файлов:\
 `raw_auto_kz.csv` — сырой датасет, по которому будет сделана предобработка;\
