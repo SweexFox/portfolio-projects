@@ -5,6 +5,9 @@
 * `prep_kz_car_market.ipynb` — предобработка данных
 * `analysis_kz_car_market.ipynb` — анализ данных
 
+В процессе анализа использовался `SQL` с СУБД `PostgreSQL`, `pandas`, а также `plotly` для визуализации данных.\
+Локально через `DBeaver` с развёрнутой базой данных `Ulysses` была создана таблица `df` схемы `k`.
+
 **Цель проекта:** получение понимания состояния авторынка Казахстана в ретроспективе первых трёх кварталов  2019 года.
 
 Ссылка с тетрадкой по предобработке на [Google Colab](https://colab.research.google.com/drive/1SAWUcJJHVEFrwjGAaAg0AYKBGnFORE34?usp=sharing)
@@ -22,6 +25,9 @@
 * NumPy
 * Plotly
 * Psycopg
+* PostgreSQL
+* DBeaver
+* SQL
 * Предобработка данных
 * Анализ данных
 * Визуализация данных
