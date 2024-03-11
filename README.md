@@ -3,7 +3,7 @@
 |  #  |     Наименование проекта    |         Описание         |         Стек          |
 | - | ------------------------ | ---------------------- | ------------------- |
 |  1  | [Объекты культурного наследия РФ](https://github.com/SweexFox/portfolio-projects/tree/main/python-projects/6-cultural-heritage-sites-of-russia) | Большая предобработка данных | Python, Pandas, NumPy, re, предобработка данных
-|  2  | [Авторынок Казахстана](https://github.com/SweexFox/portfolio-projects/tree/main/python-projects/7-kz-car-market) | Была проделана большая работа по предобработке данных | Python, Pandas, NumPy, предобработка данных
+|  2  | [Авторынок Казахстана](https://github.com/SweexFox/portfolio-projects/tree/main/python-projects/7-kz-car-market) | Была проделана большая работа по предобработке данных с последующим анализом с использованием локальной БД | Python, Pandas, NumPy, Plotly, Psycopg, PostgreSQL, DBeaver, SQL предобработка данных, анализ данных, визуализация данных
 |  3  | [Сервис по доставке еды](https://github.com/SweexFox/portfolio-projects/tree/main/sql-projects/delivery-service) | Анализ работы компании: экономика, продуктовые метрики | SQL, PostgreSQL, продуктовые метрики
 |  4  | [Инвестиции в стартап-компании](https://github.com/SweexFox/portfolio-projects/tree/main/sql-projects/startup-investments) | Различной сложности запросы к базе данных | SQL, PostgreSQL |
 |  5  | [Вопросы и ответы сервиса Stack Overflow](https://github.com/SweexFox/portfolio-projects/tree/main/sql-projects/stackoverflow) | Все сложные SQL-запросы для подсчёта требуемых значений и метрик | SQL, PostgreSQL |
