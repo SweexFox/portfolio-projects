@@ -9,3 +9,4 @@
 4. Seaborn
 5. Plotly
 6. SciPy
+7. Psycopg2
