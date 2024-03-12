@@ -10,7 +10,8 @@
 
 **Цель проекта:** получение понимания состояния авторынка Казахстана в ретроспективе первых трёх кварталов  2019 года.
 
-Ссылка с тетрадкой по предобработке на [Google Colab](https://colab.research.google.com/drive/1SAWUcJJHVEFrwjGAaAg0AYKBGnFORE34?usp=sharing)
+Ссылка с тетрадкой по предобработке на [Google Colab](https://colab.research.google.com/drive/1SAWUcJJHVEFrwjGAaAg0AYKBGnFORE34?usp=sharing)\
+Ссылка с тетрадкой по анализу данных на [Google Colab](https://colab.research.google.com/drive/1v8-X8_l92lk1Ojfedo2FtczH0d5V0Ar7?usp=sharing)
 
 **Описание файлов:** \
 `raw_auto_kz.csv` — сырой датасет, по которому будет сделана предобработка;\
