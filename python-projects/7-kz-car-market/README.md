@@ -19,7 +19,9 @@
 `raw_auto_kz.csv` — сырой датасет, по которому будет сделана предобработка;\
 `prep_kz_car_market.ipynb` — тетрадка Jupyter с процессом предобработки;\
 `dry_auto_kz.csv` — сухой датасет, по которому уже сделана предобработка;\
-`analysis_kz_car_market.ipynb` — тетрадка Jupyter с анализом данных.
+`analysis_kz_car_market.ipynb` — тетрадка Jupyter с анализом данных;\
+`kz_car_dash.pbix` — дашборд проекта для просмотра его в Power BI;\
+`kz_car_dash.png` — изображение дашборда.
 
 
 ## Навыки и инструменты
