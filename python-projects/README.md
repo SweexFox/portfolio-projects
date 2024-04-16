@@ -10,3 +10,4 @@
 5. Plotly
 6. SciPy
 7. Psycopg2
+8. requests
