@@ -2,7 +2,7 @@
 
 |  #  |     Наименование проекта    |         Описание         |         Стек          |
 | - | ------------------------ | ---------------------- | ------------------- |
-|  1  | [Отток компаний из сервиса Gectaro](https://github.com/SweexFox/portfolio-projects/tree/main/python-projects/8-gectaro) | Был обрисован портрет компании, которая имеет тенденцию к оттоку. Были даны рекомендации сервису Gectaro | Python, Pandas, requests, Plotly, Seaborn, предобработка данных, исследовательский анализ данных, визуализация данных
+|  1  | [Отток компаний из сервиса Gectaro](https://github.com/SweexFox/portfolio-projects/tree/main/python-projects/8-gectaro) | Был обрисован портрет компании, которая имеет тенденцию к оттоку. Были даны рекомендации сервису Gectaro | Python, Pandas, requests, Matplotlib, Seaborn, Plotly, предобработка данных, исследовательский анализ данных, визуализация данных
 |  2  | [Объекты культурного наследия РФ](https://github.com/SweexFox/portfolio-projects/tree/main/python-projects/6-cultural-heritage-sites-of-russia) | Большая предобработка данных | Python, Pandas, NumPy, re, предобработка данных
 |  3  | [Авторынок Казахстана](https://github.com/SweexFox/portfolio-projects/tree/main/python-projects/7-kz-car-market) | Была проделана большая работа по предобработке данных с последующим анализом с использованием локальной БД. Также был разработан дашборд в Power BI | Python, Pandas, NumPy, Plotly, Psycopg, PostgreSQL, DBeaver, SQL, Power BI, предобработка данных, анализ данных, визуализация данных
 |  4  | [Сервис по доставке еды](https://github.com/SweexFox/portfolio-projects/tree/main/sql-projects/delivery-service) | Анализ работы компании: экономика, продуктовые метрики | SQL, PostgreSQL, продуктовые метрики
