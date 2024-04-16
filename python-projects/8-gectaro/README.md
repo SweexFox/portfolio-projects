@@ -23,6 +23,7 @@ Gectaro — это облачный сервис для автоматизаци
 ## Навыки и инструменты
 * Python
 * Pandas
+* Matplotlib
 * Seaborn
 * Plotly
 * Предобработка данных
