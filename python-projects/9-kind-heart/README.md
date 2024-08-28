@@ -19,7 +19,8 @@
 6. Провели когортный анализ.
 
 **Описание файлов:** \
-`kind_heart.ipynb` — тетрадка Jupyter с работой.
+`kind_heart.ipynb` — тетрадка Jupyter с работой.\
+Ссылка работы на [Google Colab](https://colab.research.google.com/drive/1-VKwksZAzLs6lZ-F-DKicnCHEve1-hZw?usp=sharing)
 
 ## Навыки и инструменты
 * Python
