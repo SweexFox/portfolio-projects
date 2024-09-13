@@ -21,7 +21,7 @@
 
 **Описание файлов:** \
 `loss_causes_of_app.ipynb` — тетрадка Jupyter с работой.\
-Ссылка работы на [Google Colab](https://colab.research.google.com/drive/1-VKwksZAzLs6lZ-F-DKicnCHEve1-hZw?usp=sharing)
+Ссылка работы на [Google Colab](https://colab.research.google.com/drive/12F8EeClFDDOCun1QgpKu8Y24kJMhPAKD?usp=sharing)
 
 ## Навыки и инструменты
 * Python
